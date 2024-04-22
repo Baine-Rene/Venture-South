@@ -1,9 +1,4 @@
 
-/* Fonts */
-@font-face {
-  font-family: 'dreamorphans-b'; 
-  src: url('../Fonts/dreamorphans/dreamorphans-b.ttf')
-}
 @font-face {
   font-family: 'inter'; 
   src: url('../Fonts/inter/Inter-Regular.ttf')
@@ -17,20 +12,28 @@ a{
 html{
   scroll-behavior: smooth;
 }
+
 /* Navbar */
-.navbar-brand{
-  font-family: 'dreamorphans-b'; 
+.navbar{
+  background-color: #9C9D59;
 }
-.nav-link{
-  color: hsl(0, 0%, 100%);
-  font-family: 'dreamorphans-b';
+.navbar-brand{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-weight: 900;
+  color: #fff;
+}
+
+.navbar, .nav-link{
+  color:#fff;
+  font-weight: 700;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 .nav-link:hover{
-color: #3cb371;
+color: #5A6954;
 }
 .navbar-form{
   color: white;
-  font-family: 'dreamorphans-b'; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 .navbar-form:hover{
   color:#000000; 
@@ -43,8 +46,10 @@ font-size: 16px;
   transition:all 4.s ease-in-out;
 }
 .navbar .btn{
-  background-color: #3cb371;
+  background-color: #5A6954;
   color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-weight: 800;
 }
 .navbar .btn:hover{
     color: #000000;
@@ -54,44 +59,50 @@ font-size: 16px;
   outline: none;
   box-shadow: none;
 }
-
 /* End of NavBar */
 
-
 /* Header */
-header .btn{
-  font-family: 'dreamorphans-b';
- background-color: #3cb371;
- border-radius: 10px;
- border: 1px solid #3cb371;
+header{
+  background-color: #fff;
 }
+
+.title{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
+}
+.title-2{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
+}
+header p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-weight:normal;
+  font-size: large;
+  color: grey;
+}
+
 header .btn{
+  background-color: #5A6954;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-weight: 800;
+
   transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
   transition:all 4.s ease-in-out;
 }
-.title{
-  font-family: 'dreamorphans-b';
-  font-size: 95px;
-  font-weight:900;
-}
-.title-2{
-  font-family: 'dreamorphans-b';
-  font-size: 65px;
-  font-weight:900;
-}
-header p{
-  font-family: 'inter';
+header .btn:hover{
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 767px) {
   .title{
-    font-family: 'dreamorphans-b';
-  font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-size: 50px;
   }
   .title-2{
-    font-family: 'dreamorphans-b';
-  font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-size: 50px;
   }
 }
 
@@ -157,7 +168,7 @@ header p{
   
   .why-us .icon-boxes .icon-box i {
     font-size: 40px;
-    color: #3cb371;
+    color: #5A6954;
     margin-bottom: 30px;
   }
   
@@ -174,111 +185,86 @@ header p{
   }
   
   /* Services */
-.service h1{
-  font-family: 'dreamorphans-b'; 
-  font-weight: 600;
-}
-.service h3 {
-    color: white;
-    font-family: 'dreamorphans-b'; 
-    
-}
-.service p{
-  color: white;
-  font-family: 'inter';
-  font-weight: 400;
-  
+  .service-item {
+    position: relative;
+    text-align: center;
 }
 
-.services-title {
-color: #3cb371;
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
 }
-.fa-info{
-    color: #3cb371;
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: .3s;
+    z-index: -1;
 }
-  .service .nav .nav-link {
+
+.service-item:hover .service-img img {
+    transform: scale(1);
+}
+
+.service-item .service-text {
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.service-item:hover .service-text {
+    background: rgba(15, 66, 41, .6);
+}
+
+.service-item .service-text h4,
+.service-item .service-text p {
+    transition: .3;
+}
+
+.service-item:hover .service-text h4 {
+    color: #FFFFFF;
+}
+
+.service-item:hover .service-text p {
+    color: #FFFFFF;
+}
+
+.service-item .service-text .btn-square {
+    width: 100px;
+    height: 100px;
+    background: transparent;
     transition: .5s;
 }
 
-.service .nav .nav-link.active {
-    border-color: var(--primary) !important;
-    background: var(--primary);
+.service-item:hover .service-text .btn-square {
+    background: var(--light);
 }
 
-.service .nav .nav-link.active h5 {
-    color: #3cb371 !important;
+.service-item .service-text .btn {
+    width: 31px;
+    height: 31px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark);
+    background: var(--light);
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .3s;
 }
 
-.service .nav .nav-link.active h5 i {
-    color: #FFFFFF !important;
+.service-item:hover .service-text .btn {
+    width: 112px;
 }
 
-button .nav-link{
-    color: white;
-}
-
-/* Gallery */
-.gallery-title{
-  font-family: 'dreamorphans-b'; 
-}
-
-.glightbox-open {
-  overflow: auto !important;
-}
-
-.gscrollbar-fixer {
-  margin-right: 0 !important;
-}
-
-[data-glightbox] {
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-}
-
-.glightbox-clean .gslide-description {
-  background: transparent !important;
-}
-.glightbox-clean .gslide-description .gdesc-inner {
-  text-align: center;
-}
-.glightbox-clean .gslide-description .gslide-title {
-  color: #fff !important;
-  margin-bottom: 0 !important;
-  text-align: center;
-  font-weight: bold !important;
-  font-size: 1.2rem !important;
-}
-.glightbox-clean .gslide-description .gslide-desc {
-  color: var(--fg-300);
-}
-
-/* Glossary */
-
-.glossary h1{
-  font-family: 'dreamorphans-b'; 
-}
-.glossary p{
-  font-family: 'inter';
-}
-
-  .btn-lg{
-    color: white;
-    font-family: 'dreamorphans-b'; 
-  }
-
-.glossary .btn{
-  transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
-  transition:all 4.s ease-in-out;
-}
-.glossary .btn{
-  background-color: #3cb371;
-  color: #fff;
-}
-.glossary .btn:hover{
-    color: #000000;
-    background-color: white;
-    border: 1px solid #000000;
-}
 /* Back to top */
 .back-to-top {
   position: fixed;
@@ -286,6 +272,8 @@ button .nav-link{
   right: 30px;
   bottom: 30px;
   z-index: 99;
+  background-color: #5A6954;
+  color: #fff;
 }
 .b-example-divider {
   width: 100%;
@@ -296,40 +284,45 @@ button .nav-link{
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
-    /* Footer */
-    footer .container-fluid{
-padding-left: 50px;
-padding-right: 50px;
-    }
-
-  footer .navbar-form{
-      color: white;
-      font-family: 'dreamorphans-b'; 
-    }
-  footer .navbar-form:hover{
-      color:#ffffff; 
-    }
-  footer .navbar-form .fa{
-    font-size: 16px;
-    }
-
-footer  a{
-      text-decoration:none;
-      color: #3cb371;
-  }
-    .mr-2,
-    .mx-2 {
-      margin-right: 0.5rem !important;
-    }
-    
-    .btn-lg, .btn-group-lg > .btn {
-      padding: 0.5rem 1rem;
-      font-size: 1.25rem;
-      line-height: 1.5;
-      border-radius: 0.3rem;
-    }
-    footer h4{
-      font-family: 'dreamorphans-b'; 
-    }
-    
-    
+/* Footer */
+footer{
+  background-color: #5A6954;
+}
+footer h1{
+  font-weight: 900;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+  footer .container-fluid{
+      padding-left: 50px;
+      padding-right: 50px;
+          }
+      
+        footer .navbar-form{
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+          }
+        footer .navbar-form:hover{
+            color:#ffffff; 
+          }
+        footer .navbar-form .fa{
+          font-size: 16px;
+          }
+      
+      footer  a{
+            text-decoration:none;
+            color: #9C9D59;
+        }
+          .mr-2,
+          .mx-2 {
+            margin-right: 0.5rem !important;
+          }
+          
+          .btn-lg, .btn-group-lg > .btn {
+            padding: 0.5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: 0.3rem;
+          }
+          footer h4{
+              font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+          }

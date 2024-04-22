@@ -1,0 +1,228 @@
+body {
+    background-color:;
+    }
+
+    @font-face {
+        font-family: 'dreamorphans-b'; 
+        src: url('../Fonts/dreamorphans/dreamorphans-b.ttf')
+      }
+      @font-face {
+        font-family: 'inter'; 
+        src: url('../Fonts/inter/Inter-Regular.ttf')
+      }
+
+    a{
+        text-decoration:none;
+        color: white;
+    }
+    
+
+/* Navbar */
+.navbar-brand{
+  font-family: 'dreamorphans-b'; 
+}
+.nav-link{
+  color: hsl(0, 0%, 100%);
+  font-family: 'dreamorphans-b';
+}
+.nav-link:hover{
+color: #3cb371;
+border-radius: .5rem;
+}
+.navbar-form{
+  color: white;
+  font-family: 'dreamorphans-b'; 
+}
+.navbar-form:hover{
+  color:#000000; 
+}
+.navbar-form .fa{
+font-size: 16px;
+}
+.navbar .btn{
+  transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
+  transition:all 4.s ease-in-out;
+}
+.navbar .btn{
+  background-color: #3cb371;
+  color: #fff;
+}
+.navbar .btn:hover{
+    color: #000000;
+    background-color: white;
+}
+ .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* End of NavBar */
+
+    
+/* about */
+#about h1{
+    font-family: 'dreamorphans-b';
+    font-weight: 500;
+}
+#about p{
+  font-family: 'inter'; 
+  
+}
+#about .nav-link{
+    color: #3cb371;
+}
+#about .nav-link:active{
+    color: #000000;
+}
+
+#about .btn-lg-square{
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+.rounded-circle{
+    border-radius: 50% !important;
+}
+
+.fa{
+font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.landing-team-content .section-title{
+  font-family: 'dreamorphans-b'; 
+  font-size: 50px;
+}
+.landing-team-content p{
+  font-family: 'inter'; 
+}
+
+.landing-team-card h5{
+  color: white;
+  font-family: 'dreamorphans-b'; 
+
+}
+.landing-team-card p{
+  color: white;
+  font-family: 'inter'; 
+}
+
+.oleez-landing-section {
+  padding-top: 100px;
+  padding-bottom: 125px; }
+
+.oleez-landing-section-team .landing-team-content {
+  margin-bottom: 52px; }
+
+.oleez-landing-section-team .landing-team-card .team-card-img {
+  width: 100%;
+  margin-bottom: 39px; 
+  border-radius: 12px;
+}
+
+.oleez-landing-section-team .landing-team-card .team-card-name {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px; 
+}
+
+.oleez-landing-section-team .landing-team-card .team-card-job {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 16px; }
+
+
+  .oleez-landing-section-team .landing-team-card .team-card-social-links a: {
+    text-decoration: none; 
+  }
+
+  .oleez-landing-section-team .landing-team-card .team-card-social-links a:hover {
+    text-decoration: none; 
+  }
+
+    /* Media Queries */
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+.landing-team-content, .landing-team-card{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.team-card-job, .team-card-name, .team-card-social-links{
+  text-align: center;
+}
+}
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .landing-team-content, .landing-team-card{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .team-card-job, .team-card-name, .team-card-social-links{
+    text-align: center;
+  }
+}
+
+
+
+/* Back to top */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+    /* Footer */
+    footer .container-fluid{
+      padding-left: 50px;
+      padding-right: 50px;
+          }
+      
+        footer .navbar-form{
+            color: white;
+            font-family: 'dreamorphans-b'; 
+          }
+        footer .navbar-form:hover{
+            color:#ffffff; 
+          }
+        footer .navbar-form .fa{
+          font-size: 16px;
+          }
+      
+      footer  a{
+            text-decoration:none;
+            color: #3cb371;
+        }
+          .mr-2,
+          .mx-2 {
+            margin-right: 0.5rem !important;
+          }
+          
+          .btn-lg, .btn-group-lg > .btn {
+            padding: 0.5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: 0.3rem;
+          }
+          footer h4{
+            font-family: 'dreamorphans-b'; 
+          }
+          
+    

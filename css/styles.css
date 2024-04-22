@@ -1,0 +1,335 @@
+
+/* Fonts */
+@font-face {
+  font-family: 'dreamorphans-b'; 
+  src: url('../Fonts/dreamorphans/dreamorphans-b.ttf')
+}
+@font-face {
+  font-family: 'inter'; 
+  src: url('../Fonts/inter/Inter-Regular.ttf')
+}
+
+a{
+    text-decoration:none;
+    color: white;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar-brand{
+  font-family: 'dreamorphans-b'; 
+}
+.nav-link{
+  color: hsl(0, 0%, 100%);
+  font-family: 'dreamorphans-b';
+}
+.nav-link:hover{
+color: #3cb371;
+}
+.navbar-form{
+  color: white;
+  font-family: 'dreamorphans-b'; 
+}
+.navbar-form:hover{
+  color:#000000; 
+}
+.navbar-form .fa{
+font-size: 16px;
+}
+.navbar .btn{
+  transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
+  transition:all 4.s ease-in-out;
+}
+.navbar .btn{
+  background-color: #3cb371;
+  color: #fff;
+}
+.navbar .btn:hover{
+    color: #000000;
+    background-color: white;
+}
+ .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* End of NavBar */
+
+
+/* Header */
+header .btn{
+  font-family: 'dreamorphans-b';
+ background-color: #3cb371;
+ border-radius: 10px;
+ border: 1px solid #3cb371;
+}
+header .btn{
+  transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
+  transition:all 4.s ease-in-out;
+}
+.title{
+  font-family: 'dreamorphans-b';
+  font-size: 95px;
+  font-weight:900;
+}
+.title-2{
+  font-family: 'dreamorphans-b';
+  font-size: 65px;
+  font-weight:900;
+}
+header p{
+  font-family: 'inter';
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  .title{
+    font-family: 'dreamorphans-b';
+  font-size: 80px;
+  }
+  .title-2{
+    font-family: 'dreamorphans-b';
+  font-size: 45px;
+  }
+}
+
+/* End Header */
+
+/* Why Us */
+.why-us {
+    padding: 0 0 30px 0;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .why-us .content {
+    padding: 30px;
+    background: #3cb371;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .why-us .content h3 {
+    font-family: 'dreamorphans-b'; 
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .why-us h4{
+    font-family: 'dreamorphans-b'; 
+  }
+  
+  .why-us .content p {
+    margin-bottom: 30px;
+    font-family: 'inter';
+  }
+  
+  .why-us .content .btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+    font-family: 'dreamorphans-b'; 
+  }
+  .why-us .btn{
+    transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
+    transition:all 4.s ease-in-out;
+  }
+  .why-us .content .btn:hover {
+    color: #000000;
+    background: #fff;
+    
+  }
+  
+  .why-us .icon-boxes .icon-box {
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+  }
+  
+  .why-us .icon-boxes .icon-box i {
+    font-size: 40px;
+    color: #3cb371;
+    margin-bottom: 30px;
+  }
+  
+  .why-us .icon-boxes .icon-box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+  }
+  
+  .why-us .icon-boxes .icon-box p {
+    font-size: 15px;
+    font-family: 'inter';
+    color: #716f6f;
+  }
+  
+  /* Services */
+.service h1{
+  font-family: 'dreamorphans-b'; 
+  font-weight: 600;
+}
+.service h3 {
+    color: white;
+    font-family: 'dreamorphans-b'; 
+    
+}
+.service p{
+  color: white;
+  font-family: 'inter';
+  font-weight: 400;
+  
+}
+
+.services-title {
+color: #3cb371;
+}
+.fa-info{
+    color: #3cb371;
+}
+  .service .nav .nav-link {
+    transition: .5s;
+}
+
+.service .nav .nav-link.active {
+    border-color: var(--primary) !important;
+    background: var(--primary);
+}
+
+.service .nav .nav-link.active h5 {
+    color: #3cb371 !important;
+}
+
+.service .nav .nav-link.active h5 i {
+    color: #FFFFFF !important;
+}
+
+button .nav-link{
+    color: white;
+}
+
+/* Gallery */
+.gallery-title{
+  font-family: 'dreamorphans-b'; 
+}
+
+.glightbox-open {
+  overflow: auto !important;
+}
+
+.gscrollbar-fixer {
+  margin-right: 0 !important;
+}
+
+[data-glightbox] {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.glightbox-clean .gslide-description {
+  background: transparent !important;
+}
+.glightbox-clean .gslide-description .gdesc-inner {
+  text-align: center;
+}
+.glightbox-clean .gslide-description .gslide-title {
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  text-align: center;
+  font-weight: bold !important;
+  font-size: 1.2rem !important;
+}
+.glightbox-clean .gslide-description .gslide-desc {
+  color: var(--fg-300);
+}
+
+/* Glossary */
+
+.glossary h1{
+  font-family: 'dreamorphans-b'; 
+}
+.glossary p{
+  font-family: 'inter';
+}
+
+  .btn-lg{
+    color: white;
+    font-family: 'dreamorphans-b'; 
+  }
+
+.glossary .btn{
+  transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
+  transition:all 4.s ease-in-out;
+}
+.glossary .btn{
+  background-color: #3cb371;
+  color: #fff;
+}
+.glossary .btn:hover{
+    color: #000000;
+    background-color: white;
+    border: 1px solid #000000;
+}
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+    /* Footer */
+    footer .container-fluid{
+padding-left: 50px;
+padding-right: 50px;
+    }
+
+  footer .navbar-form{
+      color: white;
+      font-family: 'dreamorphans-b'; 
+    }
+  footer .navbar-form:hover{
+      color:#ffffff; 
+    }
+  footer .navbar-form .fa{
+    font-size: 16px;
+    }
+
+footer  a{
+      text-decoration:none;
+      color: #3cb371;
+  }
+    .mr-2,
+    .mx-2 {
+      margin-right: 0.5rem !important;
+    }
+    
+    .btn-lg, .btn-group-lg > .btn {
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: 0.3rem;
+    }
+    footer h4{
+      font-family: 'dreamorphans-b'; 
+    }
+    
+    

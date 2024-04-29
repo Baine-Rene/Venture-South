@@ -77,7 +77,6 @@ header{
 header p{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
   font-weight:normal;
-  font-size: large;
   color: grey;
 }
 
@@ -200,6 +199,15 @@ header .btn:hover{
 
 .service-item:hover .service-text .btn {
     width: 112px;
+}
+
+/* Call to action */
+.call-to-action a{
+ background-color: #9C9D59;
+ color: white;
+}
+.call-to-action .fs-4{
+  color: #5A6954;
 }
 
 /* Back to top */

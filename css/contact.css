@@ -2,59 +2,69 @@ body {
   line-height: 1.5;
     }
     
-    @font-face {
-      font-family: 'dreamorphans-b'; 
-      src: url('../Fonts/dreamorphans/dreamorphans-b.ttf')
-    }
+
     @font-face {
       font-family: 'inter'; 
       src: url('../Fonts/inter/Inter-Regular.ttf')
     }
+    
     a{
         text-decoration:none;
-        color: #3cb371;
+        color: white;
+    
+    }
+    html{
+      scroll-behavior: smooth;
     }
     
-
-/* Navbar */
-.navbar-brand{
-  font-family: 'dreamorphans-b'; 
-}
-.nav-link{
-  color: hsl(0, 0%, 100%);
-  font-family: 'dreamorphans-b';
-}
-.nav-link:hover{
-color: #3cb371;
-}
-.navbar-form{
-  color: white;
-  font-family: 'dreamorphans-b'; 
-}
-.navbar-form:hover{
-  color:#000000; 
-}
-.navbar-form .fa{
-font-size: 16px;
-}
-.navbar .btn{
-  transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
-  transition:all 4.s ease-in-out;
-}
-.navbar .btn{
-  background-color: #3cb371;
-  color: #fff;
-}
-.navbar .btn:hover{
-    color: #000000;
-    background-color: white;
-}
- .navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-/* End of NavBar */
+    /* Navbar */
+    .navbar{
+      background-color: #9C9D59;
+    }
+    .navbar-brand{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      font-weight: 900;
+      color: #fff;
+    }
+    
+    .navbar, .nav-link{
+      color:#fff;
+      font-weight: 700;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    }
+    .nav-link:hover{
+    color: #5A6954;
+    }
+    .navbar-form{
+      color: white;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    }
+    .navbar-form:hover{
+      color:#000000; 
+    }
+    .navbar-form .fa{
+    font-size: 16px;
+    }
+    .navbar .btn{
+      transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s;
+      transition:all 4.s ease-in-out;
+    }
+    .navbar .btn{
+      background-color: #5A6954;
+      color: #fff;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      font-weight: 800;
+    }
+    .navbar .btn:hover{
+        color: #000000;
+        background-color: white;
+    }
+     .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    /* End of NavBar */
+    
 
 
     /* Contact */
@@ -104,15 +114,23 @@ font-size: 16px;
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
-    /* Footer */
-    footer .container-fluid{
+
+/* Footer */
+footer{
+  background-color: #5A6954;
+}
+footer h1{
+  font-weight: 900;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+  footer .container-fluid{
       padding-left: 50px;
       padding-right: 50px;
           }
       
         footer .navbar-form{
             color: white;
-            font-family: 'dreamorphans-b'; 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
           }
         footer .navbar-form:hover{
             color:#ffffff; 
@@ -123,7 +141,7 @@ font-size: 16px;
       
       footer  a{
             text-decoration:none;
-            color: #3cb371;
+            color: #9C9D59;
         }
           .mr-2,
           .mx-2 {
@@ -137,6 +155,5 @@ font-size: 16px;
             border-radius: 0.3rem;
           }
           footer h4{
-            font-family: 'dreamorphans-b'; 
+              font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
           }
-          
